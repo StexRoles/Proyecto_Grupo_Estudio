@@ -2,3 +2,5 @@
 Sebastian Quintero Jaimes - tienda de ropa 
 
 Juan Camilo Mosquera - E-commerce de productos y servios en general 
+
+Juan Diego Alvarez Cristancho - tienda de libros 
