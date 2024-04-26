@@ -1,0 +1,17 @@
+{
+  "name": "proyectosid",
+  "version": "1.0.0",
+  "description": "proyecto para desarrollar",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/app.js",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
