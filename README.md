@@ -26,3 +26,7 @@ udacity
 udemy
 thinkific  
 Clickfunnel
+
+
+Steven
+platzi
