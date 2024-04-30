@@ -33,3 +33,7 @@ platzi
 
 Camilo
 fiverr
+coursea
+learn microsoft
+edX
+FutureLearn
