@@ -37,3 +37,25 @@ coursea
 learn microsoft
 edX
 FutureLearn
+
+<h3 align="left">User Stories</h3>
+
+1. Cómo administrador, quiero poder ver las búsquedas y su frecuencia, de manera que pueda saber cuales son los mayores intereses de los estudiantes
+
+2. Como estudiante, quiero poder cancelar cursos que me dejen insatisfecho, de modo que no malgaste tiempo en cursos que no sean de mi agrado
+
+3. Como profesor, quiero poder cambiar ligeramente el contenido de mis cursos ya publicados,  de manera que pueda corregir errores en el contenido
+
+4. Como estudiante, quiero poder calificar los cursos, para poder dar mi opinión sobre la calidad de los mismos
+
+5. Como estudiante, quiero tener acceso a una gran variedad de metodos de pago, de modo que pueda pagar los cursos de la manera que más se me facilite
+
+6. Cómo estudiante, quiero ver un ranking en base a comentarios de los corusos, de manera que pueda juzgar la calidad de los cursos antes de adquirirlos.
+
+7.  Cómo profesor, quiero ver comentarios de mis estudiantes ya inscritos en el curso, de manera que sea sencillo resolver dudas y hacer retroalimentación acerca del contenido.
+
+8.  Como estudiante, necesito un lugar en el que publicar las dudas que tengo respecto a los cursos, de manera que pueda recibir reteroalimentacion de los profesores respecto al contenido.
+
+9.  Como Profesor, quiero poder publicar informacion clara y detallada acerca del contenido de mis cursos publicados, de modo que los estudiantes puedan elegir con facilidad el contenido que es de su interés antes de adquirirlo.
+
+10.  Como estudiante, quiero tener acceso a herramientas que me permitan administrar mi progreso en los cursos, de manera que pueda tener un seguimiento organizado del contenido que estoy consumiendo en la aplicación.
