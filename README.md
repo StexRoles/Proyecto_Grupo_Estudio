@@ -38,6 +38,13 @@ learn microsoft
 edX
 FutureLearn
 
+Sebastian Quintero
+EDX
+Domestika
+Crehana
+Khan Academy
+Escuela IT
+
 <h3 align="left">User Stories</h3>
 
 1. Cómo administrador, quiero poder ver las búsquedas y su frecuencia, de manera que pueda saber cuales son los mayores intereses de los estudiantes
