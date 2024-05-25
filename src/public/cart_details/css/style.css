@@ -1,0 +1,200 @@
+* {
+    /* Elimina el margen y el relleno por defecto de todos los elementos y establece el modelo de caja para incluir el borde y el relleno en el tamaño total del elemento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Aplica la fuente 'Poppins' a todo el documento */
+  }
+  
+  .navbar {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    background: #008080; /* Establece un color de fondo verde azulado */
+    color: #fff; /* Establece el color del texto en blanco */
+  }
+  
+  nav {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    display: flex; /* Usa flexbox para organizar los elementos hijos */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    justify-content: space-between; /* Distribuye los elementos hijos con el máximo espacio posible entre ellos */
+    padding: 0.5rem 1rem; /* Añade relleno alrededor del contenido de la barra de navegación */
+  }
+  
+  nav i {
+    font-size: 1.2rem; /* Establece el tamaño de fuente para los iconos */
+  }
+  
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    display: flex; /* Usa flexbox para organizar los elementos hijos dentro de estas secciones */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+  }
+  
+  .nav-center {
+    flex-grow: 1; /* Permite que el contenedor central crezca para ocupar el espacio disponible */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+  }
+  
+  .nav-right {
+    gap: 1.2rem; /* Añade espacio entre los iconos de la derecha */
+  }
+  
+  body {
+    background: black; /* Establece un color de fondo negro */
+    color: white; /* Establece el color del texto en blanco */
+  }
+  
+  .box_video video {
+    width: 100%; /* Ocupa el ancho completo del contenedor del video */
+    height: 12rem; /* Altura fija del video */
+    object-fit: cover; /* Asegura que el video cubra el contenedor sin distorsionarse */
+    padding: 1rem; /* Añade relleno alrededor del video */
+    border-radius: 2rem; /* Bordes redondeados */
+  }
+  
+  .product_details {
+    padding: 1rem; /* Añade relleno alrededor del contenido */
+  }
+  
+  .product_details h1 {
+    font-size: 1.2rem; /* Tamaño de fuente del título */
+  }
+  
+  .product_details p {
+    margin: 0.5rem 0; /* Espaciado superior e inferior del párrafo */
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+  }
+  
+  .product_rating {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    gap: 0.5rem; /* Añade espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 0 1rem 1rem 1rem; /* Añade relleno alrededor del contenido */
+  }
+  
+  .product_rating p {
+    color: #FFD700; /* Color dorado para el texto de calificación */
+  }
+  
+  .product_rating #calificaciones {
+    color: #74767E; /* Color gris para el número de calificaciones */
+  }
+  
+  main #price_product {
+    color: white; /* Color del texto del precio en blanco */
+    font-size: 1.5rem; /* Tamaño de fuente del precio */
+    padding: 0 1rem 1rem 1rem; /* Añade relleno alrededor del contenido */
+  }
+  
+  .profile-container {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 1rem; /* Añade espacio entre los elementos */
+    padding: 1rem; /* Añade relleno alrededor del contenido */
+  }
+  
+  .avatar {
+    position: relative; /* Posiciona los elementos relativamente dentro del contenedor */
+    width: 50px; /* Ancho del avatar */
+    height: 50px; /* Altura del avatar */
+    border-radius: 50%; /* Hace el contenedor circular */
+    background: #ccc; /* Color de fondo gris */
+    display: flex; /* Usa flexbox para organizar el contenido del avatar */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+  
+  .avatar img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 100%; /* Ocupa la altura completa del contenedor */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarse */
+  }
+  
+  .verified {
+    position: absolute; /* Posiciona el icono relativamente al contenedor del avatar */
+    bottom: 2px; /* Posiciona el icono un poco más arriba desde la parte inferior */
+    right: 2px; /* Posiciona el icono un poco más a la izquierda desde la parte derecha */
+    font-size: 1rem; /* Tamaño de fuente del icono */
+    color: #fff; /* Color blanco para el icono de verificación */
+    background: #00f; /* Fondo azul para el icono de verificación */
+    border-radius: 50%; /* Hace el fondo del icono circular */
+    padding: 2px; /* Añade un poco más de relleno alrededor del icono */
+  }
+  
+  
+  .profile-info {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Organiza los elementos en columna */
+  }
+  
+  .profile-info h2 {
+    font-size: 1.2rem; /* Tamaño de fuente del nombre del usuario */
+  }
+  
+  .rating {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 0.2rem; /* Añade espacio entre los elementos */
+  }
+  
+  .rating .fa-star {
+    color: white; /* Color dorado para la estrella */
+  }
+  
+  .rating .reviews {
+    color: #888; /* Color gris para el número de reseñas */
+    font-size: 0.9rem; /* Tamaño de fuente para el número de reseñas */
+  }
+  
+  .button-container {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 1rem; /* Añade relleno alrededor del contenedor */
+  }
+  
+  button {
+    background: #008080; /* Color de fondo verde azulado */
+    color: #fff; /* Color del texto blanco */
+    border: 2px solid #fff; /* Borde blanco */
+    padding: 0.5rem 1rem; /* Añade relleno alrededor del contenido */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    transition: background 0.3s; /* Añade una transición suave al cambiar el fondo */
+  }
+  
+  button:hover {
+    background: #006666; /* Color de fondo al pasar el ratón por encima */
+  }
+  
+  .btn-large {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    max-width: 300px; /* Ancho máximo del botón */
+    margin-bottom: 1rem; /* Añade margen inferior */
+    padding: 0.75rem 1rem; /* Añade relleno alrededor del contenido */
+    font-size: 1.2rem; /* Tamaño de fuente del botón */
+  }
+  
+  .btn-group {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 1rem; /* Añade espacio entre los elementos */
+  }
+  
+  .btn-medium {
+    flex: 1; /* Permite que el botón crezca para ocupar el espacio disponible */
+    max-width: 10.5rem; /* Ancho máximo del botón */
+    padding: 0.5rem; /* Añade relleno alrededor del contenido */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+  }
+  
+  .btn-icon {
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 0; /* Elimina el relleno por defecto */
+    font-size: 1.2rem; /* Tamaño de fuente del icono */
+  }
+  

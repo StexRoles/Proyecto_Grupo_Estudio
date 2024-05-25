@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Añadiendo estilos -->
+    <link rel="stylesheet" href="cart_details/css/style.css" />
+    <!-- Añadiendo FontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/f90ce8bda8.js" crossorigin="anonymous"></script>
+    <title>Cart Details</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+      <nav>
+        <!-- Icono del menú -->
+        <div class="nav-left">
+          <i class="fa-solid fa-list"></i>
+        </div>
+        <!-- Logo centrado -->
+        <div class="nav-center">
+          <h1>logo</h1>
+        </div>
+        <!-- Iconos de búsqueda y carrito -->
+        <div class="nav-right">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <!-- Video de demostración -->
+      <div class="box_video">
+        <video src="cart_details/img/8d3aa3506fa9f8ba8fa410e0ef3f57c8.mp4" autoplay loop muted></video>
+      </div>
+      <!-- Detalles del producto -->
+      <div class="product_details">
+        <h1>Universidad Python - De Cero a Experto Más Completo +71 hrs</h1>
+        <p>Aprende Python: Tkinter, PySide, POO, Web con Django, Flask, Jinja, SQL Alchemy, Postgresql, PyCharm y mucho más!</p>
+      </div>
+      <!-- Calificación del producto -->
+      <div class="product_rating">
+        <p>5,0</p>
+        <div class="star">
+            <!-- Estrellas de calificación -->
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <!-- Número de calificaciones -->
+        <p id="calificaciones">(15,000 calificaciones)</p>
+      </div>
+      <!-- Precio del producto -->
+      <h1 id="price_product">COP 59,000.00</h1>
+      <!-- Información del perfil del vendedor -->
+      <div class="profile-container">
+        <div class="avatar">
+            <!-- Imagen del avatar -->
+            <img src="cart_details/img/avatar.png" alt="Avatar">
+            <!-- Icono de verificación -->
+            <i class="fa-solid fa-check-circle verified"></i>
+        </div>
+        <div class="profile-info">
+            <!-- Nombre del vendedor -->
+            <h2>Camilo M.</h2>
+            <div class="rating">
+                <!-- Calificación del vendedor -->
+                <i class="fa-solid fa-star"></i>
+                <span>5,0</span>
+                <span class="reviews">(324)</span>
+            </div>
+        </div>
+      </div>
+      <!-- Botones de acción -->
+      <div class="button-container">
+        <button class="btn-large">Comprar Ahora</button>
+        <div class="btn-group">
+            <button class="btn-medium">Añadir</button>
+            <button class="btn-icon"><i class="fa-solid fa-heart"></i></button>
+            <button class="btn-icon"><i class="fa-solid fa-share"></i></button>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
