@@ -1,0 +1,153 @@
+/* estilos.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between; /* Mantiene la distribución en pantallas grandes */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Fondo blanco para el header */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* Mantiene la distribución en pantallas grandes */
+    padding: 20px;
+}
+
+.descripcion-productos, .resumen-pedido {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido horizontalmente */
+    border: 2px solid #ccc; /* Contorno agregado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para profundidad */
+    background-color: #fff; /* Fondo blanco para mayor contraste */
+    padding: 15px; /* Añadir padding para separar el contenido del borde */
+}
+
+.resumen-pedido {
+    position: relative; /* Asegura que el botón Pago se posicione en relación a este contenedor */
+    padding-bottom: 60px; /* Espacio adicional para evitar que el botón cubra el contenido */
+}
+
+.titulo-container {
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%; /* Asegurar que el contenedor del título ocupe todo el ancho */
+}
+
+.scrollable {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    width: 100%; /* Asegurar que el contenido desplazable ocupe todo el ancho */
+}
+
+/* Estilos comunes para los botones */
+.button_slide {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #d3d3d3, #007BFF); /* Degradado de gris claro a azul */
+    font-size: 18px;
+    border: none; /* Sin bordes visibles */
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    color: #333; /* Color del texto */
+}
+
+.button_slide.nav_button {
+    margin-top: 10px; /* Añadir espacio entre los botones de navegación */
+    margin-left: 0; /* Asegura que no haya margen izquierdo */
+    width: auto; /* Asegura que el botón ocupe el ancho necesario */
+}
+
+.button_slide.nav_button:first-of-type {
+    margin-top: 0; /* Elimina el margen superior del primer botón */
+}
+
+/* Estilo específico para el botón de pago */
+.button_slide.slide_right {
+    width: 80%; /* Ancho aumentado a 80% */
+    margin: 0 auto 20px; /* Centrado y con margen inferior */
+    position: relative; /* Cambiado a relativo para eliminar superposición */
+}
+
+/* Estilo específico para el botón de seguir comprando */
+.button_slide.slide_down {
+    width: 80%; /* Ajuste a 80% para consistencia */
+    margin: 20px auto; /* Centrado con margen superior e inferior */
+}
+
+.button_slide:hover {
+    background: linear-gradient(to right, #007BFF, #d3d3d3); /* Gradiente invertido en hover */
+    color: #fff; /* Texto blanco en hover para contraste */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más intensa en hover */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centrar texto dentro del header */
+    }
+
+    .logo, .nombre {
+        margin-bottom: 10px; /* Añadir espacio entre elementos */
+        text-align: center; /* Centrar texto */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Asegurar que la navegación ocupe todo el ancho */
+    }
+
+    nav button {
+        margin-bottom: 10px; /* Añadir espacio entre botones */
+        width: auto; /* Asegurar que los botones ocupen el ancho necesario */
+    }
+
+    main {
+        padding: 10px;
+        flex-direction: column; /* Asegura que main esté en columna en móviles */
+        align-items: center; /* Centrar contenido en main */
+    }
+
+    .descripcion-productos, .resumen-pedido {
+        margin: 10px 0;
+        width: 90%; /* Ajustar el ancho para mejor apariencia en móviles */
+        max-width: none; /* Eliminar el ancho máximo */
+    }
+
+    .button_slide.slide_right, .button_slide.slide_down {
+        width: 100%; /* Ancho completo en móviles */
+        margin: 20px 0; /* Añadir margen en móviles */
+        position: static; /* Eliminar posición absoluta */
+    }
+}
