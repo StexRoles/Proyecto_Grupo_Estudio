@@ -5,22 +5,22 @@ const app = express();
 // IMPORTANDO PATH
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/inicio', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html')); /* __dirname: Devuelve la ruta del archivo actual */
 });
 
-app.get('/cart', (req, res) => {
+app.get('/cartDetail', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'cart_details.html'));
 });
 
-app.get('/cart2', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public','carrito de comprass','index.html'));
+app.get('/productCart', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views','productCart.html'));
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public','register','index.html'));
+    res.sendFile(path.join(__dirname, 'views','register.html'));
 });
 
 
